@@ -1,0 +1,20 @@
+{
+	"name": "directus-extension-starter",
+	"private": true,
+	"packageManager": "pnpm@9.1.2",
+	"license": "MIT",
+	"engines": {
+		"node": ">=18.18.0",
+		"pnpm": "~9"
+	},
+	"scripts": {
+		"dev": "pnpm --stream -r dev",
+		"build": "pnpm --recursive run build",
+		"lint": "eslint --flag unstable_config_lookup_from_file --cache",
+		"lint:fix": "pnpm run lint --fix"
+	},
+	"devDependencies": {
+		"@directus/eslint-config": "^0.1.0",
+		"eslint": "^9.21.0"
+	}
+}
