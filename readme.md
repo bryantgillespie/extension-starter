@@ -81,15 +81,6 @@ This prompts you to select an extension type and adds it to your bundle.
 | endpoint  | Custom API route       |
 | hook      | Event listener         |
 
-## Documentation
-
-This repo includes detailed extension docs in `docs/extensions/`:
-
-- `0.overview.md` - Extension types summary
-- `1.quickstart.md` - First extension tutorial
-- `2.api-extensions/` - Hooks, endpoints, operations
-- `3.app-extensions/` - Interfaces, layouts, panels, modules
-
 ## Resources
 
 - [Extension SDK Docs](https://directus.io/docs/guides/extensions/quickstart)
