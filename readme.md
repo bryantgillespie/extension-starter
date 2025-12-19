@@ -5,7 +5,7 @@ Build custom Directus extensions with a full local dev environment.
 ## Prerequisites
 
 - [Docker](https://docs.docker.com/get-docker/) (for running Directus)
-- [Node.js 18+](https://nodejs.org/)
+- [Node.js 22+](https://nodejs.org/)
 - [pnpm](https://pnpm.io/installation) (`npm install -g pnpm`)
 
 ## Quick Start
@@ -94,7 +94,7 @@ This repo includes detailed extension docs in `docs/extensions/`:
 
 - [Extension SDK Docs](https://directus.io/docs/guides/extensions/quickstart)
 - [API Reference](https://directus.io/docs/api)
-- [UI Components](https://components.directus.io/) (this is not comprehensive)
+- [UI Components](https://components.directus.io/)
 -
 ## Tips
 
@@ -102,18 +102,3 @@ This repo includes detailed extension docs in `docs/extensions/`:
 - Check browser console for errors
 - Use Vue DevTools for debugging
 - Run `pnpm build` before deploying
-
-## Vue Components Best Practices
-- Name files consistently using PascalCase (UserProfile.vue)
-- ALWAYS use PascalCase for component names in source code
-- Compose names from the most general to the most specific: SearchButtonClear.vue not ClearSearchButton.vue
-- ALWAYS define props with defineProps<{ propOne: number }>() and TypeScript types, WITHOUT const props =
-- Use const props = ONLY if props are used in the script block
-- Use withDefaults to declare default values
-- ALWAYS define emits with const emit = defineEmits<{ eventName: [argOne: type]; otherEvent: [] }>() for type safety
-- ALWAYS use camelCase in JS for props and emits, even if they are kebab-case in templates
-- ALWAYS use kebab-case in templates for props and emits
-ALWAYS use the prop shorthand if possible: <MyComponent :count /> instead of <MyComponent :count="count" /> (value has the - same name as the prop)
-- ALWAYS Use the shorthand for slots: <template #default> instead of <template v-slot:default>
-- ALWAYS use explicit <template> tags for ALL used slots
-ALWAYS use defineModel<type>({ required, get, set, default }) to define allowed v-model bindings in components. This avoids - defining modelValue prop and update:modelValue event manually
