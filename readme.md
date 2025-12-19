@@ -12,7 +12,7 @@ Build custom Directus extensions with a full local dev environment.
 
 ```bash
 # 1. Clone and install
-git clone <repo-url>
+git clone https://github.com/bryantgillespie/extension-starter.git
 cd extension-starter
 pnpm install
 
